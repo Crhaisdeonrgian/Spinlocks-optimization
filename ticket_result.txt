@@ -1,0 +1,40 @@
+10 threads | Mutex                                  |  218 ms
+10 threads | ticket lock                            |  401 ms
+10 threads | ticket lock with proportional back off |  238 ms
+10 threads | ticket lock with yield                 |  243 ms
+20 threads | Mutex                                  |  435 ms
+20 threads | ticket lock                            |  1514 ms
+20 threads | ticket lock with proportional back off |  501 ms
+20 threads | ticket lock with yield                 |  478 ms
+30 threads | Mutex                                  |  642 ms
+30 threads | ticket lock                            |  3103 ms
+30 threads | ticket lock with proportional back off |  728 ms
+30 threads | ticket lock with yield                 |  723 ms
+40 threads | Mutex                                  |  877 ms
+40 threads | ticket lock                            |  5483 ms
+40 threads | ticket lock with proportional back off |  972 ms
+40 threads | ticket lock with yield                 |  978 ms
+50 threads | Mutex                                  |  1077 ms
+50 threads | ticket lock                            |  10434 ms
+50 threads | ticket lock with proportional back off |  1681 ms
+50 threads | ticket lock with yield                 |  1568 ms
+60 threads | Mutex                                  |  1688 ms
+60 threads | ticket lock                            |  17050 ms
+60 threads | ticket lock with proportional back off |  2646 ms
+60 threads | ticket lock with yield                 |  2064 ms
+70 threads | Mutex                                  |  1942 ms
+70 threads | ticket lock                            |  23699 ms
+70 threads | ticket lock with proportional back off |  2532 ms
+70 threads | ticket lock with yield                 |  2271 ms
+80 threads | Mutex                                  |  2218 ms
+80 threads | ticket lock                            |  33289 ms
+80 threads | ticket lock with proportional back off |  3276 ms
+80 threads | ticket lock with yield                 |  2545 ms
+90 threads | Mutex                                  |  2375 ms
+90 threads | ticket lock                            |  37442 ms
+90 threads | ticket lock with proportional back off |  3710 ms
+90 threads | ticket lock with yield                 |  2897 ms
+100 threads | Mutex                                  |  2795 ms
+100 threads | ticket lock                            |  49337 ms
+100 threads | ticket lock with proportional back off |  4477 ms
+100 threads | ticket lock with yield                 |  3204 ms

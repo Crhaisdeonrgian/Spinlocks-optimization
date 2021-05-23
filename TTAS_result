@@ -1,0 +1,102 @@
+10 threads | Mutex                                |  202 ms
+10 threads | Spin lock TTAS time                  | 369 ms
+10 threads | Spin lock TTAS with exp back off     |  293 ms
+10 threads | Spin lock TTAS with yield time       |  211 ms
+10 threads | Spin lock TTAS with yield and exp bo |  220 ms
+20 threads | Mutex                                |  391 ms
+20 threads | Spin lock TTAS time                  | 1337 ms
+20 threads | Spin lock TTAS with exp back off     |  560 ms
+20 threads | Spin lock TTAS with yield time       |  430 ms
+20 threads | Spin lock TTAS with yield and exp bo |  446 ms
+30 threads | Mutex                                |  588 ms
+30 threads | Spin lock TTAS time                  | 2847 ms
+30 threads | Spin lock TTAS with exp back off     |  845 ms
+30 threads | Spin lock TTAS with yield time       |  654 ms
+30 threads | Spin lock TTAS with yield and exp bo |  676 ms
+40 threads | Mutex                                |  770 ms
+40 threads | Spin lock TTAS time                  | 4815 ms
+40 threads | Spin lock TTAS with exp back off     |  1224 ms
+40 threads | Spin lock TTAS with yield time       |  866 ms
+40 threads | Spin lock TTAS with yield and exp bo |  896 ms
+50 threads | Mutex                                |  959 ms
+50 threads | Spin lock TTAS time                  | 8757 ms
+50 threads | Spin lock TTAS with exp back off     |  1452 ms
+50 threads | Spin lock TTAS with yield time       |  1105 ms
+50 threads | Spin lock TTAS with yield and exp bo |  1190 ms
+60 threads | Mutex                                |  1343 ms
+60 threads | Spin lock TTAS time                  | 11924 ms
+60 threads | Spin lock TTAS with exp back off     |  1691 ms
+60 threads | Spin lock TTAS with yield time       |  1337 ms
+60 threads | Spin lock TTAS with yield and exp bo |  1390 ms
+70 threads | Mutex                                |  1354 ms
+70 threads | Spin lock TTAS time                  | 14985 ms
+70 threads | Spin lock TTAS with exp back off     |  2139 ms
+70 threads | Spin lock TTAS with yield time       |  1530 ms
+70 threads | Spin lock TTAS with yield and exp bo |  1581 ms
+80 threads | Mutex                                |  1557 ms
+80 threads | Spin lock TTAS time                  | 19331 ms
+80 threads | Spin lock TTAS with exp back off     |  2308 ms
+80 threads | Spin lock TTAS with yield time       |  1764 ms
+80 threads | Spin lock TTAS with yield and exp bo |  1820 ms
+90 threads | Mutex                                |  1871 ms
+90 threads | Spin lock TTAS time                  | 25790 ms
+90 threads | Spin lock TTAS with exp back off     |  2546 ms
+90 threads | Spin lock TTAS with yield time       |  1988 ms
+90 threads | Spin lock TTAS with yield and exp bo |  2034 ms
+100 threads | Mutex                                |  2110 ms
+100 threads | Spin lock TTAS time                  | 34488 ms
+100 threads | Spin lock TTAS with exp back off     |  2847 ms
+100 threads | Spin lock TTAS with yield time       |  2199 ms
+100 threads | Spin lock TTAS with yield and exp bo |  2313 ms
+192:kafedra igorvozhga$ g++ -std=c++17 TTAS_opt.cpp -o TTAS
+192:kafedra igorvozhga$ ./TTAS
+10 threads | Mutex                                |  204 ms
+10 threads | Spin lock TTAS time                  |  372 ms
+10 threads | Spin lock TTAS with exp back off     |  263 ms
+10 threads | Spin lock TTAS with yield time       |  217 ms
+10 threads | Spin lock TTAS with yield and exp bo |  211 ms
+20 threads | Mutex                                |  387 ms
+20 threads | Spin lock TTAS time                  |  1253 ms
+20 threads | Spin lock TTAS with exp back off     |  552 ms
+20 threads | Spin lock TTAS with yield time       |  427 ms
+20 threads | Spin lock TTAS with yield and exp bo |  438 ms
+30 threads | Mutex                                |  592 ms
+30 threads | Spin lock TTAS time                  |  2757 ms
+30 threads | Spin lock TTAS with exp back off     |  869 ms
+30 threads | Spin lock TTAS with yield time       |  658 ms
+30 threads | Spin lock TTAS with yield and exp bo |  662 ms
+40 threads | Mutex                                |  771 ms
+40 threads | Spin lock TTAS time                  |  5127 ms
+40 threads | Spin lock TTAS with exp back off     |  1183 ms
+40 threads | Spin lock TTAS with yield time       |  866 ms
+40 threads | Spin lock TTAS with yield and exp bo |  903 ms
+50 threads | Mutex                                |  966 ms
+50 threads | Spin lock TTAS time                  |  7730 ms
+50 threads | Spin lock TTAS with exp back off     |  1462 ms
+50 threads | Spin lock TTAS with yield time       |  1094 ms
+50 threads | Spin lock TTAS with yield and exp bo |  1119 ms
+60 threads | Mutex                                |  1146 ms
+60 threads | Spin lock TTAS time                  |  10827 ms
+60 threads | Spin lock TTAS with exp back off     |  1609 ms
+60 threads | Spin lock TTAS with yield time       |  1309 ms
+60 threads | Spin lock TTAS with yield and exp bo |  1387 ms
+70 threads | Mutex                                |  1531 ms
+70 threads | Spin lock TTAS time                  |  15943 ms
+70 threads | Spin lock TTAS with exp back off     |  1966 ms
+70 threads | Spin lock TTAS with yield time       |  1534 ms
+70 threads | Spin lock TTAS with yield and exp bo |  1599 ms
+80 threads | Mutex                                |  1729 ms
+80 threads | Spin lock TTAS time                  |  20812 ms
+80 threads | Spin lock TTAS with exp back off     |  2261 ms
+80 threads | Spin lock TTAS with yield time       |  1794 ms
+80 threads | Spin lock TTAS with yield and exp bo |  1885 ms
+90 threads | Mutex                                |  1983 ms
+90 threads | Spin lock TTAS time                  |  27077 ms
+90 threads | Spin lock TTAS with exp back off     |  2589 ms
+90 threads | Spin lock TTAS with yield time       |  1973 ms
+90 threads | Spin lock TTAS with yield and exp bo |  2096 ms
+100 threads | Mutex                                |  2190 ms
+100 threads | Spin lock TTAS time                  |  34468 ms
+100 threads | Spin lock TTAS with exp back off     |  2858 ms
+100 threads | Spin lock TTAS with yield time       |  2189 ms
+100 threads | Spin lock TTAS with yield and exp bo |  2358 ms
